@@ -5,7 +5,7 @@ module OmniAuth
     class LDAP
       include OmniAuth::Strategy
       @@config = {
-        'name' => 'cn',
+        'name' => 'displayName',
         'first_name' => 'givenName',
         'last_name' => 'sn',
         'email' => ['mail', "email", 'userPrincipalName'],
